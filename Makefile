@@ -22,6 +22,8 @@ venv:
 install: venv
 	$(PIP) install --upgrade pip
 	$(PIP) install pandas duckdb~=1.2.0 tabulate Jinja2
+	# Additional dependencies
+	$(PIP) install cmake clang seaborn brokenaxes matplotlib
 
 # Run your main script using the venv’s python (with venv “activated” so that
 # any 'python3' in subprocesses also refers to the same interpreter)
